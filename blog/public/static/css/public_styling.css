@@ -1,0 +1,300 @@
+* { 
+	margin: 0px; 
+	padding: 0px; 
+}
+html { 
+	height: 100%; 
+	box-sizing: border-box; 
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+a { 
+	text-decoration: none; 
+}
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Noto Serif', serif; 
+}
+ul, ol { 
+	margin-left: 40px; 
+}
+hr { 
+	margin: 10px 0px; 
+	opacity: .25; 
+}
+
+form { 
+	width: 60%; 
+	margin: 5px auto; 
+	padding-bottom: 50px; 
+}
+form input[type=file], input[type=email], input[type=password], input[type=text], 
+form select, form textarea {
+	width: 100%;
+	display: block;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin: 5px auto 10px;
+	border-radius: 3px;
+	box-sizing : border-box;
+	background: transparent;
+	border: 1px solid #3E606F;
+}
+input[type="checkbox"] { 
+	height: 20px; 
+	float: left; 
+}
+form button { 
+	float: right; 
+	margin-left: 24%; 
+}
+form input:focus { 
+	outline: none; 
+}
+label {	
+	margin-top: 20px; 
+	float: left; 
+}
+
+table { 
+	border-collapse: collapse; 
+	width: 70%; 
+	margin: 20px auto; }
+th, td { 
+	padding: 8px; 
+	text-align: left; 
+	border: 1px solid #ddd; 
+}
+th { 
+	text-align: center;
+}
+
+.btn {
+	color: white;
+	background: black;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	margin: 10px 0px;
+	padding: 13px 20px;
+	text-decoration: none;
+}
+.centered-button {
+	color: white;
+	background: black;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	margin: 0 auto;
+	padding: 13px 20px;
+	text-decoration: none;
+	width: 30%;
+}
+
+.navbar {
+	padding: 15px 45px;
+	font-family: 'Noto Serif', serif;
+	color: white;
+	background: black;
+}
+.navbar .site-name { 
+	width: 50%; 
+	float: left; 
+}
+.navbar .site-name h1 { 
+	color: white; 
+}
+.navbar .menu { 
+	width: 30%; 
+	margin-top: 10px; 
+	float: right;
+}
+.navbar .login { 
+	width: 20%; 
+	margin-top: 10px;
+	float: right;
+}
+.navbar .menu-button { 
+	color: white; 
+	text-decoration: none; 
+	margin-left: 20px; 
+}
+.navbar:after { 
+	content: ""; 
+	display: block; 
+	clear: both; 
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto 0px;
+  padding: 20px 0px;
+}
+
+.content {
+	margin: 5px auto;
+	border-radius: 5px;
+	min-height: 400px;
+}
+.content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.content .content-title {
+	margin: 10px 0px;
+	color: #374447;
+	font-family: 'Averia Serif Libre', cursive;
+}
+.content .post {
+	width: 335px;
+	margin: 9px;
+	min-height: 320px;
+	float: left;
+	border-radius: 2px;
+	border: 1px solid #b3b3b3;
+	position: relative;
+}
+.content .post .category {
+	margin-top: 0px;
+	padding: 3px 8px;
+	color: black;
+	background: white;
+	display: inline-block;
+	border-radius: 2px;
+	border: 1px solid #374447;
+	box-shadow: 3px 2px 2px;
+	position: absolute;
+	left: 5px; top: 5px;
+	z-index: 3;
+}
+.content .post .category:hover {
+	box-shadow: 3px 2px 2px;
+	color: white;
+	background: black;
+	transition: .4s;
+	opacity: 1;
+}
+.content .post .post_image {
+	height: 260px;
+	width: 100%;
+	background-size: 100%;
+}
+.content .post .post_info {
+	height: 100%;
+	padding: 0px 5px;
+	font-weight: 200;
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+.content .post .post_info h3{
+	text-align: center;
+}
+.content .post .post_info span {
+	color: #A6A6A6;
+	font-style: italic;
+}
+
+.content .post-wrapper {
+	width: 70%;
+	float: left;
+	min-height: 250px;
+}
+.full-post-div {
+	min-height: 300px;
+	padding: 20px;
+	border: 1px solid #e4e1e1;
+	border-radius: 2px;
+}
+.full-post-div h2.post-title {
+	margin: 10px auto 20px;
+	text-align: center;
+	font-size: 1.7em;
+}
+.full-post-div h3.post-title {
+	margin: 10px auto 20px;
+	font-size: 1.3em;
+}
+.full-post-div p.post-info {
+	float: right;
+}
+
+.post-body-div {
+	font-family: 'Noto Serif', serif;
+	font-size: 1.0em;
+}
+.post-body-div p {
+	margin: 15px 0px;
+}
+.post-sidebar {
+	width: 24%;
+	float: left;
+	margin-left: 5px;
+	min-height: 400px;
+}
+.post-sidebar .card {
+	width: 95%;
+	margin: 10px auto;
+	border: 1px solid #e4e1e1;
+	border-radius: 10px 10px 0px 0px;
+}
+.post-sidebar .card .card-header {
+	padding: 10px;
+	text-align: center;
+	border-radius: 3px 3px 0px 0px;
+	background: black;
+}
+.post-sidebar .card .card-header h2 {
+	color: white;
+}
+.post-sidebar .card .card-content a {
+	display: block;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	border-bottom: 1px solid #e4e1e1;
+	color: #444;
+}
+.post-sidebar .card .card-content a:hover {
+	padding-left: 20px;
+	background: #EDE6E6;
+	transition: 0.1s;
+}
+
+.message {
+	width: 100%; 
+	margin: 0px auto; 
+	padding: 10px 0px; 
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	border-radius: 5px; 
+	text-align: center;
+}
+.error {
+	color: #a94442; 
+	background: #f2dede; 
+	border: 1px solid #a94442; 
+	margin-bottom: 20px;
+}
+.validation_errors p {
+	text-align: left;
+	margin-left: 10px;
+}
+.logged_in_info {
+	text-align: right; 
+	padding: 10px;
+}
