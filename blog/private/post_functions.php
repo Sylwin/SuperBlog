@@ -161,7 +161,7 @@ function createPost($request_values) {
   	$featured_image = $_FILES['featured_image']['name'];
   	if (empty($featured_image)) { array_push($errors, "Featured image is required"); }
 
-  	$target = $_SERVER['DOCUMENT_ROOT'] . "/blog/public/static/images/" . basename($featured_image);
+  	$target = $_SERVER['DOCUMENT_ROOT'] . "/public/static/images/" . basename($featured_image);
   	if (!move_uploaded_file($_FILES['featured_image']['tmp_name'], $target)) {
   		array_push($errors, "Failed to upload image. Please check file settings for your server");
   	}
@@ -175,7 +175,7 @@ function createPost($request_values) {
 	
 	if (count($errors) == 0) {
 		$user_id = $_SESSION['user']['id'];
-		$query = "INSERT INTO posts (post_title, description, post_text, creation_date, user_id, published, image) VALUES('$title', '$description', '$body', now(),'$user_id', $published, '$featured_image')";
+		$query = "INSERT INTO posts (post_title, description, post_text, creation_date, modification_date, user_id, published, image) VALUES('$title', '$description', '$body', now(), now(), '$user_id', $published, '$featured_image')";
 		
 		if(mysqli_query($conn, $query)){
 			$inserted_post_id = mysqli_insert_id($conn);

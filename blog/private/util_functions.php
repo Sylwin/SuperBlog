@@ -20,7 +20,6 @@ function esc(String $value) {
 
 function redirect_to($location) {
   	header("Location: " . $location);
-  	
 }
 
 function redirect_if_not_logged_in() {

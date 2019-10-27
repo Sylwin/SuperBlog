@@ -82,7 +82,7 @@ function registerUser($request_values) {
 		mysqli_query($conn, $query);
 
 		$_SESSION['message'] = "Welcome " . $username . "! Your account has been created successfully. You can now log in!";
-		redirect_to(url_for('profile/profile.php'));
+		redirect_to(url_for('login/login.php'));
 		exit(0);
 	}
 }

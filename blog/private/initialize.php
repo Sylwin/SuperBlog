@@ -1,4 +1,5 @@
 <?php 
+	ob_start();
 	session_start();
 
 	define('PRIVATE_PATH', dirname(__FILE__));
