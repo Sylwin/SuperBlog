@@ -17,3 +17,5 @@
 	<title><?php echo h($page_title); ?></title>
 </head>
 <body>
+
+<?php include(SHARED_PATH . '/navbar.php') ?>

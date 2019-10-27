@@ -1,5 +1,5 @@
 <?php
-	require_once("initialize.php");
+	require_once("private/initialize.php");
 	
-	redirect_to("public/index.php"));
+	redirect_to("public/index.php");
 ?>

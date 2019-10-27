@@ -8,8 +8,6 @@
 <?php $page_title = 'Super Blog | Home'; ?>
 <?php include(SHARED_PATH . '/head_section.php') ?>
 
-	<?php include(SHARED_PATH . '/navbar.php') ?>
-
 	<div class="container">
 
 		<div class="content">

@@ -13,7 +13,6 @@
 ?>
 <?php include(SHARED_PATH . '/head_section.php'); ?>
 	
-	<?php include(SHARED_PATH . '/navbar.php') ?>
 	<div class="container content">
 	
 		<?php include('menu.php') ?>

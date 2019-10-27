@@ -24,7 +24,6 @@ function redirect_to($location) {
 
 function redirect_if_not_logged_in() {
 	if (!isset($_SESSION['user'])) {
-		array_push($errors, "You have to be logged in to see this page!");
 		redirect_to(url_for('login/login.php'));
 	}
 }

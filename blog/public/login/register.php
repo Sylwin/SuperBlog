@@ -4,8 +4,6 @@
 <?php $page_title = 'Super Blog | Register'; ?>
 <?php include(SHARED_PATH . '/head_section.php'); ?>
 	
-	<?php include(SHARED_PATH . '/navbar.php'); ?>
-	
 	<div class="container">
 		<div style="width: 40%; margin: 20px auto;">
 			<form method="post" action="register.php" >
