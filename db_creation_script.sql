@@ -33,7 +33,7 @@ CREATE TABLE `post_topic` (
  `post_id` int(11) NOT NULL,
  `topic_id` int(11) NOT NULL,
  PRIMARY KEY (`id`),
- UNIQUE KEY `post_u` (`post_id`),
+ KEY `post_id_con` (`post_id`),
  KEY `topic_id_con` (`topic_id`),
  CONSTRAINT `post_id_con` FOREIGN KEY (`post_id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
  CONSTRAINT `topic_id_con` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
