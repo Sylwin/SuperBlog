@@ -250,7 +250,7 @@ function updatePost($request_values) {
 				$inserted_post_id = mysqli_insert_id($conn);
 				$sql = "INSERT INTO post_topic (post_id, topic_id) VALUES($inserted_post_id, $topic_id)";
 				mysqli_query($conn, $sql);
-				$_SESSION['message'] = "Post created successfully";
+				$_SESSION['message'] = "Post updated successfully";
 				redirect_to(url_for("profile/actions/manage_posts.php"));
 				exit(0);
 			}
