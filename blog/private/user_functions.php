@@ -39,11 +39,11 @@ function createUser($request_values){
 	}
 	if (empty($password)) { 
 		array_push($errors, "uh-oh you forgot the password"); 
-	} else if (strlen($password) < 6) {
+	} else if (strlen($password) < 8) {
 		array_push($errors, "Password should have at least 8 characters long"); 
-	} else if (preg_match('/[0-9]/', $myString) < 1) {
+	} else if (preg_match('/[0-9]/', $password) < 1) {
 		array_push($errors, "Password should contains at least 1 number"); 
-	} else if (preg_match('/[A-Za-z]/', $myString) < 1) {
+	} else if (preg_match('/[A-Za-z]/', $password) < 1) {
 		array_push($errors, "Password should contains at least 1 letter"); 
 	}
 	if ($password != $passwordConfirmation) { 
@@ -54,11 +54,11 @@ function createUser($request_values){
 							OR email='$email' LIMIT 1";
 	$result = mysqli_query($conn, $user_check_query);
 	$user = mysqli_fetch_assoc($result);
+
 	if ($user) {
 		if ($user['username'] === $username) {
 		  array_push($errors, "Username already exists");
 		}
-
 		if ($user['email'] === $email) {
 		  array_push($errors, "Email already exists");
 		}

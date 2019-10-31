@@ -42,7 +42,7 @@ function loginUser($request_values) {
 }
 
 function registerUser($request_values) {
-	global $conn, $errors;
+	global $conn, $errors, $username, $email;
 	$username = esc($request_values['username']);
 	$email = esc($request_values['email']);
 	$password = esc($request_values['password']);

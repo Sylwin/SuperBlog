@@ -6,7 +6,7 @@
 	
 	<div class="container">
 		<div style="width: 40%; margin: 20px auto;">
-			<form method="post" action="register.php" >
+			<form method="post" action="<?php echo url_for('login/register.php'); ?>" >
 				<div class='form-header'>
 					<h2>Registration</h2>
 				</div>
